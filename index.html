@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aditya Yadav — React & Next.js frontend developer building production websites, admin dashboards, API-driven products and modern interfaces." />
+  <meta name="theme-color" content="#0a0b10" />
+  <meta property="og:title" content="Aditya Yadav — Frontend Developer" />
+  <meta property="og:description" content="React, Next.js, Redux Toolkit, Node.js, Express.js, admin dashboards and production web experiences." />
+  <meta property="og:type" content="website" />
+  <title>Aditya Yadav — Frontend Developer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Aditya Yadav home">
+        <span class="brand-mark">AY</span>
+        <span class="brand-copy"><strong>Aditya Yadav</strong><small>Frontend Developer</small></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Stack</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#admin-work">Admin Work</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme" title="Switch theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a class="nav-cta" href="#contact">Let's talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <div class="availability-pill"><span></span> Building production web experiences</div>
+          <p class="eyebrow">React • Next.js • Admin Systems • REST APIs</p>
+          <h1>
+            I build interfaces that feel
+            <span class="gradient-text">fast, clear & production-ready.</span>
+          </h1>
+          <p class="hero-lead">
+            I'm <strong>Aditya Yadav</strong>, a frontend developer focused on React.js and Next.js — building live websites, scalable admin dashboards, API-driven interfaces and polished responsive experiences.
+          </p>
+
+          <div class="role-line" aria-label="Areas I work in">
+            <span class="role-label">Currently focused on</span>
+            <span class="role-value" id="roleRotator">React.js applications</span>
+            <span class="typing-caret" aria-hidden="true"></span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary magnetic" href="#projects">Explore my work <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-ghost" href="mailto:adityayadavvv12@gmail.com">Email me <i class="fa-regular fa-envelope"></i></a>
+          </div>
+
+          <div class="hero-socials" aria-label="Social links">
+            <a href="https://github.com/AdityaYadav05" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+            <a href="https://www.linkedin.com/in/aditya-yadav9936096/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a>
+            <button type="button" id="copyEmail"><i class="fa-regular fa-copy"></i><span>Copy email</span></button>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="120">
+          <div class="profile-stage spotlight-card">
+            <div class="profile-halo" aria-hidden="true"></div>
+            <div class="profile-frame">
+              <img src="profile.jpg" alt="Portrait of Aditya Yadav" class="profile-photo" />
+            </div>
+
+            <div class="floating-chip chip-react"><i class="fa-brands fa-react"></i><span>React.js</span></div>
+            <div class="floating-chip chip-next"><strong>N</strong><span>Next.js</span></div>
+            <div class="floating-chip chip-node"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+
+            <div class="profile-status">
+              <span class="status-dot"></span>
+              <div><small>Based in</small><strong>Gorakhpur, India</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero-metrics reveal" data-delay="220">
+        <div class="metric"><strong data-count="4" data-suffix="+">0</strong><span>Live products</span></div>
+        <div class="metric"><strong data-count="15" data-suffix="+">0</strong><span>Projects / modules</span></div>
+        <div class="metric"><strong>2024 — Now</strong><span>Professional journey</span></div>
+        <div class="metric"><strong>Web + Admin</strong><span>Production focus</span></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">01 / About</span><h2>More than just screens.</h2></div>
+          <p>I care about the full frontend experience — architecture, usability, performance, data flows and the admin tools teams use every day.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-main glass-card spotlight-card reveal">
+            <span class="card-index">ABOUT_ME</span>
+            <h3>Frontend developer with a product mindset.</h3>
+            <p>
+              I work primarily with <strong>React.js, Next.js, JavaScript, Redux Toolkit and Tailwind CSS</strong>. I turn designs into responsive interfaces, integrate REST APIs, build reusable components and work on complex admin panels with filters, tables, forms, permissions and operational workflows.
+            </p>
+            <p>
+              I'm also growing my backend knowledge with <strong>Node.js, Express.js and MongoDB</strong>, use <strong>Git & GitHub</strong> for team workflows, work from <strong>Figma</strong> designs, and have <strong>basic React Native knowledge</strong> for cross-platform mobile development.
+            </p>
+            <div class="about-cta-row">
+              <a href="#skills" class="text-link">See my complete stack <i class="fa-solid fa-arrow-right"></i></a>
+              <span class="location-chip"><i class="fa-solid fa-location-dot"></i> Gorakhpur, Uttar Pradesh</span>
+            </div>
+          </article>
+
+          <div class="about-side">
+            <article class="mini-card reveal" data-delay="80">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Education</span>
+              <strong>BCA · J.S. University</strong>
+              <small>Computer applications & software development</small>
+            </article>
+            <article class="mini-card reveal" data-delay="140">
+              <i class="fa-solid fa-code-branch"></i>
+              <span>Daily workflow</span>
+              <strong>Build → Review → Ship</strong>
+              <small>Git-based collaboration and production iteration</small>
+            </article>
+            <article class="mini-card reveal" data-delay="200">
+              <i class="fa-solid fa-language"></i>
+              <span>Languages</span>
+              <strong>Hindi · English</strong>
+              <small>Comfortable in technical team communication</small>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stack-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">02 / Stack</span><h2>Tools I use to ship.</h2></div>
+          <p>No artificial percentage bars — this view shows what I use professionally, what I work with, and what I'm currently learning.</p>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-card reveal spotlight-card">
+            <div class="stack-card-head"><span class="stack-icon"><i class="fa-brands fa-react"></i></span><div><small>PRIMARY</small><h3>Frontend Engineering</h3></div></div>
+            <div class="tech-pills">
+              <span>React.js</span><span>Next.js</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Tailwind CSS</span><span>Responsive UI</span>
+            </div>
+          </article>
+
+          <article class="stack-card reveal spotlight-card" data-delay="60">
+            <div class="stack-card-head"><span class="stack-icon"><i class="fa-solid fa-layer-group"></i></span><div><small>APPLICATION STATE</small><h3>Data & UI Architecture</h3></div></div>
+            <div class="tech-pills">
+              <span>Redux Toolkit</span><span>REST APIs</span><span>Server Pagination</span><span>Filters & Search</span><span>Reusable Components</span><span>FormData</span>
+            </div>
+          </article>
+
+          <article class="stack-card reveal spotlight-card" data-delay="120">
+            <div class="stack-card-head"><span class="stack-icon"><i class="fa-brands fa-node-js"></i></span><div><small>WORKING KNOWLEDGE</small><h3>Backend Fundamentals</h3></div></div>
+            <div class="tech-pills">
+              <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT Auth</span><span>API Integration</span><span>CRUD</span>
+            </div>
+          </article>
+
+          <article class="stack-card reveal spotlight-card" data-delay="180">
+            <div class="stack-card-head"><span class="stack-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span><div><small>WORKFLOW</small><h3>Tools & Collaboration</h3></div></div>
+            <div class="tech-pills">
+              <span>Git</span><span>GitHub</span><span>Vite</span><span>npm</span><span>ESLint</span><span>Postman</span><span>Figma</span>
+            </div>
+          </article>
+
+          <article class="stack-card reveal spotlight-card stack-card-wide" data-delay="240">
+            <div class="stack-card-head"><span class="stack-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><div><small>LEARNING / BASIC</small><h3>React Native</h3></div></div>
+            <p class="stack-note">Basic knowledge of React Native concepts, project setup, components and mobile testing workflows. Continuing to build practical experience.</p>
+            <div class="tech-pills"><span>React Native Basics</span><span>Expo Fundamentals</span><span>Mobile UI</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">03 / Production Work</span><h2>Products that are live.</h2></div>
+          <p>Selected public products and company platforms I have worked around, with emphasis on responsive frontend experiences and supporting admin workflows.</p>
+        </div>
+
+        <div class="project-toolbar reveal">
+          <div class="filter-group" aria-label="Project filters">
+            <button class="filter-btn active" data-filter="all" type="button">All</button>
+            <button class="filter-btn" data-filter="product" type="button">Products</button>
+            <button class="filter-btn" data-filter="company" type="button">Company</button>
+            <button class="filter-btn" data-filter="admin" type="button">Admin-heavy</button>
+          </div>
+          <span class="project-count"><strong id="projectCount">4</strong> projects</span>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-featured reveal spotlight-card" data-category="product admin">
+            <div class="project-preview preview-astro">
+              <div class="browser-bar"><span></span><span></span><span></span><small>astrodhyaan.com/en</small></div>
+              <div class="preview-content">
+                <span class="preview-mark">AD</span>
+                <div><small>Astrology & Spiritual Platform</small><strong>Astro Dhyaan</strong></div>
+                <i class="fa-solid fa-moon"></i>
+              </div>
+              <div class="preview-lines"><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-topline"><span class="project-number">01</span><span class="live-badge"><i></i> LIVE PRODUCT</span></div>
+              <h3>Astro Dhyaan</h3>
+              <p>Production astrology platform with astrologer discovery, chat/call experiences, horoscope tools, puja offerings, spiritual content and commerce flows.</p>
+              <div class="project-contribution"><span>My focus</span><strong>Website UI + API integration + admin operations</strong></div>
+              <div class="project-tags"><span>React</span><span>Next.js</span><span>Redux</span><span>REST API</span><span>Admin</span></div>
+              <div class="project-actions">
+                <a href="https://www.astrodhyaan.com/en" target="_blank" rel="noreferrer" class="project-link primary-link">Visit live site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <button type="button" class="project-link details-btn" data-project="astrodhyaan">Case study <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal spotlight-card" data-category="product admin" data-delay="60">
+            <div class="project-preview preview-jodi">
+              <div class="browser-bar"><span></span><span></span><span></span><small>jodi4ever.com</small></div>
+              <div class="preview-content">
+                <span class="preview-mark">J4</span>
+                <div><small>Matrimony Platform</small><strong>Jodi4Ever</strong></div>
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="preview-lines"><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-topline"><span class="project-number">02</span><span class="live-badge"><i></i> LIVE</span></div>
+              <h3>Jodi4Ever</h3>
+              <p>Modern matchmaking experience built around profile discovery, advanced search, privacy, verification and responsive user journeys.</p>
+              <div class="project-contribution"><span>My focus</span><strong>Frontend UI + responsive flows + management interfaces</strong></div>
+              <div class="project-tags"><span>React</span><span>Responsive UI</span><span>Forms</span><span>Search</span><span>Admin</span></div>
+              <div class="project-actions">
+                <a href="https://www.jodi4ever.com/" target="_blank" rel="noreferrer" class="project-link primary-link">Visit live site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <button type="button" class="project-link details-btn" data-project="jodi4ever">Case study <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal spotlight-card" data-category="company" data-delay="120">
+            <div class="project-preview preview-corenex">
+              <div class="browser-bar"><span></span><span></span><span></span><small>corenexinfotech.com</small></div>
+              <div class="preview-content">
+                <span class="preview-mark">CNX</span>
+                <div><small>Technology Company</small><strong>Corenex Infotech</strong></div>
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="preview-lines"><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-topline"><span class="project-number">03</span><span class="live-badge"><i></i> LIVE</span></div>
+              <h3>Corenex Infotech</h3>
+              <p>Corporate technology website presenting web, mobile, backend, cloud, AI and UI/UX services with a modern product-engineering identity.</p>
+              <div class="project-contribution"><span>My focus</span><strong>Modern web presentation + responsive frontend experience</strong></div>
+              <div class="project-tags"><span>Next.js</span><span>UI/UX</span><span>Corporate</span><span>Performance</span></div>
+              <div class="project-actions">
+                <a href="https://corenexinfotech.com/" target="_blank" rel="noreferrer" class="project-link primary-link">Visit live site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <button type="button" class="project-link details-btn" data-project="corenex">Case study <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal spotlight-card" data-category="company admin" data-delay="180">
+            <div class="project-preview preview-setu">
+              <div class="browser-bar"><span></span><span></span><span></span><small>astrosetu.com</small></div>
+              <div class="preview-content">
+                <span class="preview-mark">AS</span>
+                <div><small>Company Platform</small><strong>AstroSetu</strong></div>
+                <i class="fa-solid fa-bridge"></i>
+              </div>
+              <div class="preview-lines"><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-topline"><span class="project-number">04</span><span class="live-badge"><i></i> LIVE</span></div>
+              <h3>AstroSetu</h3>
+              <p>Company platform connecting digital products and services, paired with extensive internal admin/dashboard work for operational management.</p>
+              <div class="project-contribution"><span>My focus</span><strong>Website + scalable admin dashboard ecosystem</strong></div>
+              <div class="project-tags"><span>React</span><span>Redux Toolkit</span><span>Admin</span><span>REST API</span><span>RBAC</span></div>
+              <div class="project-actions">
+                <a href="https://astrosetu.com/" target="_blank" rel="noreferrer" class="project-link primary-link">Visit live site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <button type="button" class="project-link details-btn" data-project="astrosetu">Case study <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section admin-section" id="admin-work">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">04 / Admin Engineering</span><h2>Where complex frontend work happens.</h2></div>
+          <p>Beyond public landing pages, much of my work is in data-heavy operational interfaces: permissions, tables, filters, forms, transactions and management workflows.</p>
+        </div>
+
+        <div class="admin-layout">
+          <div class="admin-console reveal spotlight-card">
+            <div class="console-topbar">
+              <div><span class="console-dot"></span><span class="console-dot"></span><span class="console-dot"></span></div>
+              <span>admin.production.app</span>
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="console-body">
+              <aside class="console-sidebar" aria-hidden="true">
+                <strong>AY.</strong>
+                <span class="active"><i class="fa-solid fa-chart-line"></i></span>
+                <span><i class="fa-solid fa-users"></i></span>
+                <span><i class="fa-solid fa-box"></i></span>
+                <span><i class="fa-solid fa-wallet"></i></span>
+                <span><i class="fa-solid fa-gear"></i></span>
+              </aside>
+              <div class="console-main">
+                <div class="console-heading"><div><small>Overview</small><h3>Operations Dashboard</h3></div><span>Live data</span></div>
+                <div class="console-stats"><span><small>Users</small><strong>12.8K</strong></span><span><small>Orders</small><strong>1,248</strong></span><span><small>Revenue</small><strong>₹8.4L</strong></span></div>
+                <div class="console-chart" aria-hidden="true"><i style="height:38%"></i><i style="height:62%"></i><i style="height:48%"></i><i style="height:81%"></i><i style="height:70%"></i><i style="height:92%"></i><i style="height:76%"></i><i style="height:100%"></i></div>
+                <div class="console-table" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="admin-capabilities">
+            <article class="capability reveal" data-delay="40"><span>01</span><div><h3>Role-based admin & auth</h3><p>Admin/sub-admin flows, permissions, protected routes, JWT integration, account states and role-aware navigation.</p></div></article>
+            <article class="capability reveal" data-delay="80"><span>02</span><div><h3>Data-heavy management</h3><p>Users, astrologers, products, categories and records with server-side search, sorting, pagination and date filters.</p></div></article>
+            <article class="capability reveal" data-delay="120"><span>03</span><div><h3>Bookings & transactions</h3><p>Call history, puja/product bookings, payment status, delivery states, wallet information and operational actions.</p></div></article>
+            <article class="capability reveal" data-delay="160"><span>04</span><div><h3>Reusable UI systems</h3><p>Shared tables, filters, modals, exports, pagination controls, forms, image previews and consistent page layouts.</p></div></article>
+          </div>
+        </div>
+
+        <div class="admin-tags reveal">
+          <span>React Table</span><span>Redux Toolkit</span><span>Server-side Pagination</span><span>Debounced Search</span><span>Date Range Filters</span><span>CSV / PDF Export</span><span>Multipart Forms</span><span>Audit-friendly Workflows</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">05 / Experience</span><h2>My development journey.</h2></div>
+          <p>From internship foundations to shipping production React interfaces and large admin workflows.</p>
+        </div>
+
+        <div class="experience-list">
+          <article class="experience-item reveal">
+            <div class="experience-meta"><span>2025 — Present</span><small>Full-time</small></div>
+            <div class="experience-main">
+              <div class="experience-title"><div><h3>Frontend Developer</h3><p>Astro Setu · New Delhi</p></div><span class="role-badge">Current role</span></div>
+              <p>Building and maintaining production web applications and admin interfaces with React.js, Next.js, Redux Toolkit, Tailwind CSS and REST API integrations.</p>
+              <ul>
+                <li>Develop responsive, reusable frontend components for production products.</li>
+                <li>Integrate REST APIs and manage complex async/data states.</li>
+                <li>Build admin modules with tables, filters, permissions, forms and operational actions.</li>
+                <li>Translate Figma designs into polished and maintainable interfaces.</li>
+                <li>Collaborate through Git/GitHub and improve performance across growing applications.</li>
+              </ul>
+              <div class="experience-tags"><span>React.js</span><span>Next.js</span><span>Redux Toolkit</span><span>Tailwind</span><span>REST API</span><span>Git</span></div>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="experience-meta"><span>2024 — 2025</span><small>Internship</small></div>
+            <div class="experience-main">
+              <div class="experience-title"><div><h3>Frontend Development Intern</h3><p>Astro Setu · New Delhi</p></div></div>
+              <p>Built strong foundations in production frontend development, responsive design and team-based delivery.</p>
+              <ul>
+                <li>Built responsive interfaces from design mockups.</li>
+                <li>Learned component-driven development and modern JavaScript practices.</li>
+                <li>Worked alongside senior developers on real product features.</li>
+              </ul>
+              <div class="experience-tags"><span>HTML/CSS</span><span>JavaScript</span><span>React</span><span>Figma</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal spotlight-card">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <div class="contact-main">
+            <span class="section-kicker">06 / Contact</span>
+            <h2>Have a product, frontend role or challenging admin UI?</h2>
+            <p>I'm open to conversations around React/Next.js development, dashboard engineering and product-focused frontend work.</p>
+            <div class="contact-actions">
+              <a class="btn btn-primary magnetic" href="mailto:adityayadavvv12@gmail.com">Start a conversation <i class="fa-solid fa-paper-plane"></i></a>
+              <a class="btn btn-ghost" href="tel:+919936096673">Call me <i class="fa-solid fa-phone"></i></a>
+            </div>
+          </div>
+          <div class="contact-details">
+            <a href="mailto:adityayadavvv12@gmail.com"><small>Email</small><strong>adityayadavvv12@gmail.com</strong><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="tel:+919936096673"><small>Phone</small><strong>+91 9936096673</strong><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <div><small>Location</small><strong>Gorakhpur, Uttar Pradesh, India</strong><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-social-row"><a href="https://github.com/AdityaYadav05" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/aditya-yadav9936096/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <div><span class="brand-mark small">AY</span><p>Designed & developed by Aditya Yadav.</p></div>
+      <p>React-minded. Product-focused. Always learning.</p>
+      <a href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close project details"><i class="fa-solid fa-xmark"></i></button>
+      <span class="modal-kicker" id="modalKicker">CASE STUDY</span>
+      <h2 id="modalTitle">Project</h2>
+      <p id="modalDescription"></p>
+      <div class="modal-grid">
+        <div><small>PRODUCT TYPE</small><strong id="modalType"></strong></div>
+        <div><small>FOCUS</small><strong id="modalFocus"></strong></div>
+      </div>
+      <h3>What I worked on</h3>
+      <ul id="modalList"></ul>
+      <div class="modal-tags" id="modalTags"></div>
+      <a id="modalVisit" class="btn btn-primary" href="#" target="_blank" rel="noreferrer">Open live project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
+  <script src="script.js"></script>
+</body>
+</html>
